@@ -29,35 +29,35 @@ Because we need to insert, delete, and search the Book, we're implementing the D
 
    # Admin Login Check
    If we choose that we are admin the we will be asked to Enter the user name and the password if it the entered user name and password is true then we will be asked to choose a function we want to perform e.g Add Book.
+   # If Admin 
+   - 
+      - Add Book
+      Using the function Insertnewbook we add node as a book in the DLL and at the same
+      time that node is added in a file name Book.py to keep record of the books.
+      - Del Book
+      Using the function Deletebook we delete the node in the DLL and also from the file
+      named Book.py
+      - Issue Book
+      In Issue Book Function First we will check the request of the user who want to issue the book the first person that requested will be issued the book      first and after that every other in a queue will be severed. After taking the request we will issued the book to the user and del the book from the        files and add it in a dictionary to keep record of book issued.
+      - View Books
+      In View Book Function we will traverse the whole DLL and check each node (node are books) if the book user looking for is a node of DLL then we will r      eturn that the book is available in the Library.
+      - View Record of Issued Books
+      View Record of the Issued function will give us a list of the book that has been issued to the users and currently not available in the library.
 
-      - If Admin:
-         - Add Book
-         Using the function Insertnewbook we add node as a book in the DLL and at the same
-         time that node is added in a file name Book.py to keep record of the books.
-         - Del Book
-         Using the function Deletebook we delete the node in the DLL and also from the file
-         named Book.py
-         - Issue Book
-         In Issue Book Function First we will check the request of the user who want to issue the book the first person that requested will be issued the book      first and after that every other in a queue will be severed. After taking the request we will issued the book to the user and del the book from the        files and add it in a dictionary to keep record of book issued.
-         - View Books
-         In View Book Function we will traverse the whole DLL and check each node (node are books) if the book user looking for is a node of DLL then we will r      eturn that the book is available in the Library.
-         - View Record of Issued Books
-         View Record of the Issued function will give us a list of the book that has been issued to the users and currently not available in the library.
-   
    # User Login Check
    This Function will check the user if the user is the member of the library by check it user id , user name and password if it is true then the user can have access to the library and we will able to perform the specific functions e.g Request for issue Book.
-      - If User:
-         - Request For Issue Book
-         In this function the user will be able to request for a book and will wait for his/her turn. If the user is the first in the queue then he/she we will  issued the book first.
-         - Return Book
-         The return book function is used for returning the book by the user. The user can easily return the book to the library.
-         - Reissue:
-         The Book user recently return if he/she wants to reissue it the user can easily use this function.
-
-         - View Book
-         In View Book Function we will traverse the whole DLL and check each node (node are books) if the book user looking for is a node of DLL then we will return that the book is available in the Library.
-         - View if Book is Issued or not
-         This function is used by the user to check is the admin issued him/her the book or not.
+   # If User
+   -
+      - Request For Issue Book
+      In this function the user will be able to request for a book and will wait for his/her turn. If the user is the first in the queue then he/she we will  issued the book first.
+      - Return Book
+      The return book function is used for returning the book by the user. The user can easily return the book to the library.
+      - Reissue:
+      The Book user recently return if he/she wants to reissue it the user can easily use this function.
+      - View Book
+      In View Book Function we will traverse the whole DLL and check each node (node are books) if the book user looking for is a node of DLL then we will return that the book is available in the Library.
+      - View if Book is Issued or not
+      This function is used by the user to check is the admin issued him/her the book or not.
 
    # Register Your-Self
    If the User is not register they cannot login in to issue a book so before login we have a function for those user who are not register but want to be a member of the library then they can register their self easily.
